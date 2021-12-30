@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste articles !{% endblock %}
+{% block body %}
+<h1>Articles</h1>
+{% if articles %}
+<table id="articles" class="tables table-striped">
+<thread>
+<tr> <th> Article </th> <th>Actions </th> </tr>
+</thread>
+<tbody>
+    {% for article in articles %}    
+    <tr> 
+        <td> {{ a.designation }} </td> 
+        <td>  <a href="{{path('article_routes',{'id':a.id})}}" class="bnt btn_primary"> Details </a> </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+    {% else %}
+        <p> aucun articles </p>
+    {% endif %}
+<style>
+</style>
+
+<div class="example-wrapper">
+</div>
+{% endblock %}

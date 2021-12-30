@@ -1,0 +1,3 @@
+index:
+    path: "/luky/number"
+    controller: App\Controller\LukyController::number

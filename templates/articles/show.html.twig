@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}L'Article {{ article.designation }} !{% endblock %}
+{% block body %}
+<h1>Article</h1>
+<table id="articles" class="tables table-striped">
+<thread>
+<tr> <th> Article </th> <th> Description </th> <th> Prix </th>   </tr>
+</thread>
+<tbody>
+     
+    <tr> 
+        <td> {{ article.designation }} </td> 
+         <td> {{ article.Description }} </td> 
+
+         <td> {{ article.Prix }} </td> 
+
+    </tr>
+    </tbody>
+    </table>
+<style>
+</style>
+
+<div class="example-wrapper">
+</div>
+{% endblock %}
